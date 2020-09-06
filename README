@@ -1,0 +1,17 @@
+Tanasescu-Scarlat Chrys
+332CA
+
+
+									Tema 4 SO Linux
+									
+									
+		Am implementat o coada de prioritati intr-un mod cat mai simplu(sub
+forma unei liste inlantuite in care mentin ordinea cand adaug un nod)
+Am mai implementat vectori de structuri pt informatiile threadurilor si
+al threadurilor blocate de fiecare io.
+		Am lasat comentarii pt partile de logica mai complicate. Pe partea
+de sincronizare, tema mi s-a parut grea pana mi-am dat seama ca la sfarsitul
+tuturor functiilor trebuie sa adaug acel pseudocod din enunt folosind mutexuri
+si variabile de conditie. De asemenea, apelez pthread_cond_signal de fiecare
+data cand un thread iese de pe coada, trezeste procesele in starea de waiting
+sau isi termina executia.
